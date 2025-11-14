@@ -15,7 +15,6 @@ while True:
                 harga = float(input("Masukkan harga per unit (Rp): "))
                 barang = {'nama': nama, 'harga': harga}
                 inventaris.append(barang)
-                print(barang)
         else:
             print("Nama barang tidak boleh kosong!")
 
@@ -41,7 +40,7 @@ while True:
                 nama_barang = barang.get('nama', 'Tidak ada nama')
                 harga = barang.get('harga', 0)
                 stok = barang.get('stok', 0)
-                print(f"{idx:<4} Nama: {nama_barang} Harga: {harga}")
+                print(f"{idx:<4} Nama: {nama_barang} | Harga: {harga}")
             print(f"Total Barang: {len(inventaris)}")
         else:
             print("Inventaris kosong.")
